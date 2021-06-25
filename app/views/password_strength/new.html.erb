@@ -1,0 +1,5 @@
+<%= form_with url: password_strength_index_path, method: :post do |form| %>
+  <%= form.label :string, "Password check:" %>
+  <%= form.text_field :string, value: params[:string] %>
+  <%= form.submit "Search" %>
+<% end %>
